@@ -1,0 +1,57 @@
+ "PassiveShop": [
+    {
+      "c0": 250,
+      "name": "Teoriprov",
+      "filename": av, 
+      "income": 0.42
+    },
+    {
+      "c0": 500,
+      "name": "ProvProgram",
+      "filename":,
+      "income": 0.64
+    },
+    {
+      "c0": 800,
+      "name": "Cykel",
+      "filename":,
+      "income":
+    },
+    {
+      "c0": 1200,
+      "name": "Vespa",
+      "filename":,
+      "income":
+    },
+    {
+      "c0": 2000,
+      "name": "Asteroids",
+      "filename":,
+      "income":
+    },
+    {
+      "c0": 3000,
+      "name":,
+      "filename":,
+      "income":
+    },
+    {
+      "c0": 5000,
+      "name":,
+      "filename":,
+      "income":
+    },
+    {
+      "c0": 8000,
+      "name":,
+      "filename":,
+      "income":
+    },
+    {
+      "c0": 12000,
+      "name":,
+      "filename":,
+      "income":
+    }
+  ]
+}

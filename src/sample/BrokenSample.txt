@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.*?>
+<?import Mechanics.Shop?>
+<Pane fx:id="rot" maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" prefHeight="800.0"
+      prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.Controller">
+    <children>
+        <ImageView layoutX="100.0" layoutY="537.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Mechanics/resources/Images/Bratt.jpg"/>
+            </image>
+            <effect>
+                <Bloom threshold="0.22"/>
+            </effect>
+            <clip>
+                <Circle radius="100" translateX="100" translateY="100"/>
+            </clip>
+        </ImageView>
+        <ScrollPane hbarPolicy="NEVER" layoutX="395.0" layoutY="50.0" prefHeight="700.0" prefWidth="400.0">
+            <content>
+                <VBox fx:id="shopPane" prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <ImageView fitWidth="400" preserveRatio="true">
+                            <image>
+                                <Image url="@../Mechanics/resources/Images/Bratt2.jpg"/>
+                            </image>
+                        </ImageView>
+                        <Accordion maxHeight="700.0" maxWidth="400.0" minHeight="700.0" minWidth="400.0"
+                                   prefHeight="700.0" prefWidth="400.0">
+                            <panes>
+                                <TitledPane alignment="CENTER" animated="false" blendMode="SRC_ATOP"
+                                            text="ActiveBrattCome"
+                                            textAlignment="CENTER">
+                                    <font>
+                                        <Font name="Comic Sans MS Bold" size="12.0"/>
+                                    </font>
+                                    <content>
+                                        <ScrollPane fx:id="clickBox" hbarPolicy="NEVER" prefHeight="200.0"
+                                                    prefWidth="200.0">
+                                            <content>
+                                                <!--Genialt, importerar komponenten och sen skapar en ny instans av Shop som läggs till då det är en vbox-->
+                                                <!--<Shop fx:id="activeShop" shopName="ActiveShop"/>-->
+                                            </content>
+                                        </ScrollPane>
+                                    </content>
+                                </TitledPane>
+                                <TitledPane alignment="CENTER" animated="false" text="Passive Brattcome"
+                                            textAlignment="CENTER">
+                                    <font>
+                                        <Font name="Comic Sans MS Bold" size="12.0"/>
+                                    </font>
+                                    <content>
+                                        <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                                            <content>
+                                                <VBox fx:id="passiveBox" prefHeight="200.0" prefWidth="100.0"/>
+                                            </content>
+                                        </ScrollPane>
+                                    </content>
+                                </TitledPane>
+                                <TitledPane alignment="CENTER" animated="false" prefHeight="700.0" prefWidth="400.0"
+                                            text="MultiplierBoosts" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="Comic Sans MS Bold" size="12.0"/>
+                                    </font>
+                                    <content>
+                                        <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                                            <content>
+                                                <VBox fx:id="multiplierBox" prefHeight="200.0" prefWidth="100.0"/>
+                                            </content>
+                                        </ScrollPane>
+                                    </content>
+                                </TitledPane>
+                            </panes>
+                        </Accordion>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="8.0" layoutX="495.0" prefHeight="50.0"
+               prefWidth="200.0" snapToPixel="false" text="SHOP:" textAlignment="CENTER" textOverrun="CLIP">
+            <font>
+                <Font name="Comic Sans MS Bold" size="24.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="8.0" layoutX="95.0" layoutY="14.0"
+               prefHeight="49.0" prefWidth="200.0" text="BrattClicker" textAlignment="CENTER" textOverrun="CLIP">
+            <font>
+                <Font name="Comic Sans MS Bold" size="24.0"/>
+            </font>
+        </Label>
+        <VBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="50.0" prefHeight="200.0" prefWidth="373.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label id="balancelbl" text="Bratts: " wrapText="true">
+                            <font>
+                                <Font name="Comic Sans MS Bold" size="18.0"/>
+                            </font>
+                        </Label>
+                        <Region prefHeight="200.0" prefWidth="200.0"/>
+                        <Label id="balance" fx:id="balance" text="0" wrapText="true">
+                            <font>
+                                <Font name="Comic Sans MS Bold" size="18.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label id="incomelbl" alignment="CENTER" text="Bratts/s:">
+                            <font>
+                                <Font name="Comic Sans MS Bold" size="18.0"/>
+                            </font>
+                        </Label>
+                        <Region prefHeight="200.0" prefWidth="200.0"/>
+                        <Label id="income" fx:id="income" alignment="CENTER_RIGHT" text="0" wrapText="true">
+                            <font>
+                                <Font name="Comic Sans MS Bold" size="18.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label id="multiplierlbl" alignment="CENTER" text="Multiplier: ">
+                            <font>
+                                <Font name="Comic Sans MS Bold" size="18.0"/>
+                            </font>
+                        </Label>
+                        <Region prefHeight="200.0" prefWidth="200.0"/>
+                        <Label id="multiplier" fx:id="multiplier" text="1" wrapText="true">
+                            <font>
+                                <Font name="Comic Sans MS Bold" size="18.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</Pane>

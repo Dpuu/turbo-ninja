@@ -1,0 +1,70 @@
+{
+  "ActiveShop": [
+    {
+      "c0": 100,
+      "name": "Mattelektion",
+      "filename": "ML.jpg",
+      "multiplier": .1
+    },
+    {
+      "c0": 150,
+      "name": Matteprov,
+      "filename": "Mathstest.jpg",
+      "multiplier": 0.2
+    },
+    {
+      "c0": 250,
+      "name": Fysiklektion,
+      "filename": "FL.jpg",
+      "multiplier": 0.25
+    },
+    {
+      "c0": 500,
+      "name": "Fysikprov",
+      "filename": "FP.jpg",
+      "multiplier": 0.33
+    },
+    {
+      "c0": 1500,
+      "name": "TisdagsProgrammering",
+      "filename": "TP.jpg",
+      "multiplier": 0.4
+    },
+    {
+      "c0": 3200,
+      "name": "FredagsProgrammering",
+      "filename": "FPR.jpg",
+      "multiplier": 0.5
+    },
+    {
+      "c0": 6800,
+      "name": "Minirobot",
+      "filename": MR.jpg,
+      "multiplier": 0.56
+    },
+    {
+      "c0": 12500,
+      "name": "Komplexa frågor",
+      "filename": CQ.jpg,
+      "multiplier": 0.63
+    },
+    {
+      "c0": 22200,
+      "name": "Ironiska svar",
+      "filename": SB.png,
+      "multiplier": 0.72
+    },
+    {
+      "c0": 500000,
+      "name": Drönare,
+      "filename": DR.jpg,
+      "multiplier": 0.79
+    },
+    {
+      "c0": 10000000,
+      "name": Undervattensrugby,
+      "filename": UR.jpg,
+      "multiplier": 2
+    }
+  ],
+}

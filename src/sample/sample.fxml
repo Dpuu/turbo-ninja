@@ -52,7 +52,12 @@
                                         <Font name="Comic Sans MS Bold" size="12.0"/>
                                     </font>
                                     <content>
-                                        <ScrollPane prefHeight="200.0" prefWidth="200.0"/>
+                                        <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                                            <content>
+                                                <!--<Shop xmlns:fx="http://javafx.com/fxml/1" fx:id="passiveshop"
+                                                      ShopID="PassiveShop"/>-->
+                                            </content>
+                                        </ScrollPane>
                                     </content>
                                 </TitledPane>
                                 <TitledPane alignment="CENTER" expanded="false" prefHeight="700.0" prefWidth="400.0"

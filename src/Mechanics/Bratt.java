@@ -20,7 +20,7 @@ public class Bratt {
 
 
     public Bratt() throws URISyntaxException {
-        bratts = 1E6;
+        bratts = 1E12;
     }
 
     public static double getBratts() {

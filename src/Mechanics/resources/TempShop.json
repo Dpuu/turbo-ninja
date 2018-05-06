@@ -1,57 +1,57 @@
- "PassiveShop": [
+<!--"PassiveShop": [
     {
       "c0": 250,
       "name": "Teoriprov",
-      "filename": av, 
+    "filename": tpr.jpg,
       "income": 0.42
     },
     {
       "c0": 500,
       "name": "ProvProgram",
-      "filename":,
+    "filename": pp.jpg,
       "income": 0.64
     },
     {
       "c0": 800,
       "name": "Cykel",
-      "filename":,
-      "income":
+    "filename": bc.jpg,
+    "income": 1.2
     },
     {
       "c0": 1200,
       "name": "Vespa",
-      "filename":,
-      "income":
+    "filename": vsp.jpg,
+    "income": 1.6
     },
     {
       "c0": 2000,
       "name": "Asteroids",
-      "filename":,
-      "income":
+    "filename": ag.jpg,
+    "income": 2.4
     },
     {
       "c0": 3000,
-      "name":,
-      "filename":,
-      "income":
+    "name": "Breakout",
+    "filename": bo.jpg,
+"income": 3.9
     },
     {
       "c0": 5000,
-      "name":,
-      "filename":,
-      "income":
+"name": t1,
+"filename": vsp.jpg,
+"income": 8.22
     },
     {
       "c0": 8000,
-      "name":,
-      "filename":,
-      "income":
+"name": t2,
+"filename": vsp.jpg,
+"income": 1000
     },
     {
       "c0": 12000,
-      "name":,
+"name"
+t3: vsp.jpg,
       "filename":,
-      "income":
+"income": 1000000
     }
-  ]
-}
+], -->

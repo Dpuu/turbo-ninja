@@ -39,7 +39,7 @@
                                     <content>
                                         <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0">
                                             <content>
-                                                <Shop xmlns:fx="http://javafx.com/fxml/1" fx:id="activeShop"
+                                                <Shop fx:id="activeShop"
                                                       ShopID="ActiveShop"/>
                                             </content>
                                         </ScrollPane>

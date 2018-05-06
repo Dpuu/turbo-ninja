@@ -89,7 +89,7 @@ public class Controller {
             balance.setText(String.format("%.1f", Bratt.getBratts()));
             income.setText(String.format("%.2f/s", Bratt.getIncome()));
             multiplier.setText(String.format("x%.3f", Bratt.getMultiplier()));
-//            updateShops();
+            updateShops();
             Bratt.manageMultiplier();
         }));
         labels.setCycleCount(Timeline.INDEFINITE);

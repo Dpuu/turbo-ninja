@@ -8,7 +8,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.*?>
-<?import Mechanics.Shop?>
+<?import Mechanics.ActiveShop?>
+<?import Mechanics.PassiveShop?>
 <Pane xmlns:fx="http://javafx.com/fxml/1" fx:id="rot" maxHeight="800.0" maxWidth="800.0" minHeight="800.0"
       minWidth="800.0" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8"
       fx:controller="sample.Controller">
@@ -24,11 +25,12 @@
                 <Circle radius="100" translateX="100" translateY="100"/>
             </clip>
         </ImageView>
-        <ScrollPane hbarPolicy="NEVER" layoutX="395.0" layoutY="50.0" prefHeight="700.0" prefWidth="400.0">
+        <ScrollPane hbarPolicy="NEVER" vbarPolicy="NEVER" layoutX="395.0" layoutY="50.0" prefHeight="700.0"
+                    prefWidth="400.0">
             <content>
                 <VBox prefHeight="200.0" prefWidth="100.0">
                     <children>
-                        <Accordion maxHeight="700.0" maxWidth="400.0" minHeight="700.0" minWidth="400.0"
+                        <Accordion maxHeight="700.0" maxWidth="400.0" minHeight="700" minWidth="400.0"
                                    prefHeight="700.0" prefWidth="400.0">
                             <panes>
                                 <TitledPane alignment="CENTER" blendMode="SRC_ATOP" contentDisplay="CENTER"
@@ -39,8 +41,7 @@
                                     <content>
                                         <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0">
                                             <content>
-                                                <Shop fx:id="activeShop"
-                                                      ShopID="ActiveShop"/>
+                                                <ActiveShop fx:id="activeShop"/>
                                             </content>
                                         </ScrollPane>
                                     </content>
@@ -49,13 +50,13 @@
                                             textAlignment="CENTER">
                                     <font>
                                         <Font name="Comic Sans MS Bold" size="12.0"/>
-                                        <Font name="Comic Sans MS Bold" size="12.0"/>
                                     </font>
                                     <content>
                                         <ScrollPane prefHeight="200.0" prefWidth="200.0">
                                             <content>
-                                                <!--<Shop xmlns:fx="http://javafx.com/fxml/1" fx:id="passiveshop"
-                                                      ShopID="PassiveShop"/>-->
+                                                <PassiveShop fx:id="passiveShop"/>
+                                                <!--<Shop fx:id="passiveShop"-->
+                                                <!--ShopID="PassiveShop"/>-->
                                             </content>
                                         </ScrollPane>
                                     </content>
@@ -71,6 +72,7 @@
                                 </TitledPane>
                             </panes>
                         </Accordion>
+                        <!--<ImageView fitHeight="623" fitWidth="400"><Image url="@../Mechanics/resources/Images/Bratt2.jpg"/></ImageView>-->
                     </children>
                 </VBox>
             </content>

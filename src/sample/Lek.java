@@ -5,7 +5,7 @@ package sample;/**
 public class Lek {
 
     public static void main(String[] args) {
-        new Mechanics.Shop("ActiveShop");
+//        new Mechanics.Shop("ActiveShop");
     }
 
 

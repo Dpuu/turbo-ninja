@@ -17,10 +17,12 @@ public class Bratt {
     private static double multiplier = 1;
     private static boolean current = false, last = false;
     private static Timeline multiplierLine;
-
+    private static Timeline passiveIncomeLine;
 
     public Bratt() throws URISyntaxException {
-        bratts = 1E12;
+        passiveIncomeLine = new Timeline(new KeyFrame(Duration.millis(1000), e -> bratts += passiveIncome));
+        passiveIncomeLine.setCycleCount(Timeline.INDEFINITE);
+        passiveIncomeLine.play();
     }
 
     public static double getBratts() {
@@ -28,9 +30,14 @@ public class Bratt {
     }
 
     public static double getIncome() {
+        income = (activeIncome + passiveIncome) * multiplier;
+        income = Math.abs(income);
         return income;
     }
 
+    public static double getPassiveIncome() {
+        return passiveIncome;
+    }
     public static double getMultiplier() {
         return multiplier;
     }
@@ -44,8 +51,7 @@ public class Bratt {
     public static void addPace(double amount) {
         pace += amount;
         activeIncome = pace * bFactor;
-        income = (activeIncome + passiveIncome) * multiplier;
-        income = Math.abs(income);
+
     }
 
     public static void click() {
@@ -84,6 +90,9 @@ public class Bratt {
         }
     }
 
+    public static void addPassive(double amount) {
+        passiveIncome += amount;
+    }
 
     public static double getPace() {
         return pace;

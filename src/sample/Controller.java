@@ -30,6 +30,9 @@ public class Controller {
     private Label income;
     @FXML
     private Shop activeShop;
+    @FXML
+    private Shop passiveShop;
+
     private Timeline timeline;
 
     public Controller() throws URISyntaxException {
@@ -98,5 +101,6 @@ public class Controller {
 
     private void updateShops() {
         activeShop.update();
+        passiveShop.update();
     }
 }
